@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf ("Enter Three different number:");
+    scanf ("%d %d %d",&a,&b,&c);
+    switch (a>b)
+    {
+    case 1:
+        switch (c>a)
+        {
+        case 1:
+            printf ("%d is The Middle number.",a);
+            break;
+        default:
+            switch (b>c)
+            {
+            case 1:
+                printf ("%d is The Middle number.",b);
+                break;
+            default:
+                printf ("%d is The Middle number.",c);
+            }
+        }
+        break;
+    default:
+        switch (c>b)
+        {
+        case 1:
+            printf ("%d is The Middle number.",b);
+            break;
+        default:
+            switch (c>a)
+            {
+            case 1:
+                printf ("%d is The Middle number.",c);
+                break;
+            default:
+                printf ("%d is The Middle number.",a);
+            }
+        }
+    }
+    return 0;
+}

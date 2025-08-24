@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    float a,b,c;
+    printf ("Enter three integers: ");
+    scanf ("%f %f %f",&a,&b,&c);
+    (a>=b)?((a>=c)?(printf ("%.2f is Greatest.",a)):(printf ("%.2f is Greatest.",c))):((b>=c)?(printf ("%.2f is Greatest.",b)):(printf ("%.2f is Greatest.",c)));
+    return 0;
+}

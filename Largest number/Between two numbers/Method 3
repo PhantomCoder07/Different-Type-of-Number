@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    float a,b;
+    printf ("Enter two numbers: ");
+    scanf ("%f %f",&a,&b);
+    (a>b)?(printf ("%.2f is Maximum.",a)):((b>a)?(printf ("%.2f is Maximum.",b)):(printf ("Both are equal")));
+    return 0;
+}

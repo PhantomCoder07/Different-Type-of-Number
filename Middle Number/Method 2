@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf ("Enter Three different number:");
+    scanf ("%d %d %d",&a,&b,&c);
+    if (a>b)
+    {
+        if (c>a)
+            printf ("%d is The Middle number.",a);
+        else
+        {
+            if (b>c)
+                printf ("%d is The Middle number.",b);
+            else
+                printf ("%d is The Middle number.",c);
+        }
+    }
+    else
+    {
+        if (c>b)
+            printf ("%d is The Middle number.",b);
+        else
+        {
+            if (c>a)
+                printf ("%d is The Middle number.",c);
+            else
+                printf ("%d is The Middle number.",a);
+        }
+    }
+    return 0;
+}

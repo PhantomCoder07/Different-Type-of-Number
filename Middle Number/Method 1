@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf ("Enter Three different number:");
+    scanf ("%d %d %d",&a,&b,&c);
+    if ((a<b&&b<c)||(b>a&&c>b))
+        printf ("%d is The Middle number.",b);
+    else if ((b<a&&a<c)||(b>a&&a>c))
+        printf ("%d is The Middle number.",a);
+    else
+        printf ("%d is The Middle number.",c);
+    return 0;
+}

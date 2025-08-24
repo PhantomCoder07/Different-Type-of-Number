@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    float a,b,c;
+    printf ("Enter Three different number:");
+    scanf ("%f %f %f",&a,&b,&c);
+    (b>a&&a>c || a>b&&c>a)?(printf ("%.2f is The Middle number.",a)):((a>b&&b>c || b>a&&c>b)?(printf ("%.2f is The Middle number.",b)):(printf ("%.2f is The Middle number.",c)));
+    return 0;
+}

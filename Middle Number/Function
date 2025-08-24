@@ -1,0 +1,18 @@
+#include <stdio.h>
+int large (int a, int b, int c)
+{
+    if ((a<b&&b<c)||(b>a&&c>b))
+        return b;
+    else if ((b<a&&a<c)||(b>a&&a>c))
+        return a;
+    else
+        return c;
+}
+int main()
+{
+    int a,b,c;
+    printf ("Enter three different numbers: ");
+    scanf ("%d %d %d",&a,&b,&c);
+    printf("%d is middle number\n",large(a,b,c));
+    return 0;
+}

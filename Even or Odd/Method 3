@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf ("Enter a number:");
+    scanf ("%d",&a);
+    (a%2==0)?(printf ("The given number %d is Even.",a)):(printf ("The given number %d is Odd.",a));
+    return 0;
+}

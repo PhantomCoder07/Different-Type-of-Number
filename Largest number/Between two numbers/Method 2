@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    printf ("Enter two numbers: ");
+    scanf ("%d %d",&a,&b);
+    switch (a>b)
+    {
+    case 1:
+        printf ("%d is Maximum.",a);
+        break;
+    case 0:
+        switch (b>a)
+        {
+        case 1:
+            printf ("%d is Maximum.",b);
+            break;
+        default:
+            printf ("Both are equal");
+        }
+    }
+    return 0;
+}

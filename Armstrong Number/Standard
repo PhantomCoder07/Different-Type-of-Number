@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int num;
+    printf ("Enter the number: ");
+    scanf ("%d",&num);
+    int n=num,ans=num;
+    int c=0,sum=0;
+    while (n>0)
+    {
+        n/=10;
+        c++;
+    }
+    while (num>0)
+    {
+        int d=num%10;
+        sum+=pow(d,c);
+        num/=10;
+    }
+    if (sum==ans)
+        printf ("The number %d is Armstrong\n",ans);
+    else
+        printf ("The number %d is not Armstrong\n",ans);
+    return 0;
+}

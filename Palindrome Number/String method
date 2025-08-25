@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char num[10],rev[10];
+    int comp;
+    printf ("Enter the number: ");
+    gets(num);
+    strcpy (rev,num);
+    strrev (rev);
+    comp= strcmp (num,rev);
+    if (comp==0)
+        printf ("The number %s is Palindrome\n",num);
+    else
+        printf ("The number %s is not Palindrome\n",num);
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i=1,f,multi=1;
+    printf ("Enter the number:");
+    scanf ("%d",&f);
+    while (i<=f)
+    {
+        multi=multi*i;
+        i++;
+    }
+    printf("The Factorial of %d is: %d",f,multi);
+    return 0;
+}

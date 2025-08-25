@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int num,m=0;
+    printf ("Enter the number: ");
+    scanf ("%d",&num);
+    printf ("Armstrong number upto %d: ",num);
+    for (int i=1; i<=num; i++)
+    {
+        int n=i,ans=i;
+        int c=0,sum=0;
+        while (n>0)
+        {
+            n/=10;
+            c++;
+        }
+        while (i>0)
+        {
+            int d=i%10;
+            sum+=pow(d,c);
+            i/=10;
+        }
+        if (sum==ans)
+        {
+            printf ("%d ",ans);
+            m++;
+        }
+        i=ans;
+    }
+    printf("\nTotal Armstrong numbers: %d\n",m);
+    return 0;
+}

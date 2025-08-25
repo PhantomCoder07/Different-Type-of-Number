@@ -1,0 +1,21 @@
+#include <stdio.h>
+int fibonacci (int n)
+{
+    if (n==1 || n==0)
+        return n;
+    return fibonacci(n-1)+fibonacci(n-2);
+}
+int main()
+{
+    int num;
+    printf ("Enter the number: ");
+    scanf ("%d",&num);
+    int a=2,sum=0;
+    for (int i=0; i<num; i++)
+    {
+        sum+=fibonacci(a);
+        a+=2;
+    }
+    printf("Even indexed Fibonacci Sum upto %d: %d\n",num,sum);
+    return 0;
+}

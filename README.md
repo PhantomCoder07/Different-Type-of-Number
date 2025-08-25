@@ -1,2 +1,2 @@
-# Number-Type-Finding
+# Different-Type-of-Number
 Calculation

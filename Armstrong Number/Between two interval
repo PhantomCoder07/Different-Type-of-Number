@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n,m,k=0;
+    printf ("Enter the interval: ");
+    scanf ("%d %d",&n,&m);
+    printf ("Armstrong number between %d to %d: ",n,m);
+    for (int i=n; i<=m; i++)
+    {
+        int n=i,ans=i;
+        int c=0,sum=0;
+        while (n>0)
+        {
+            n/=10;
+            c++;
+        }
+        while (i>0)
+        {
+            int d=i%10;
+            sum+=pow(d,c);
+            i/=10;
+        }
+        if (sum==ans)
+        {
+            printf ("%d ",ans);
+            k++;
+        }
+        i=ans;
+    }
+    printf("\nTotal Armstrong numbers: %d\n",k);
+    return 0;
+}

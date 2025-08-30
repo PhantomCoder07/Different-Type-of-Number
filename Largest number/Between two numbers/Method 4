@@ -1,0 +1,16 @@
+#include <stdio.h>
+int large (int *a, int *b)
+{
+    if (*a > *b)
+        return *a;
+    else
+        return *b;
+}
+int main()
+{
+    int a,b;
+    printf ("Enter two different numbers: ");
+    scanf ("%d %d",&a,&b);
+    printf("%d is largest\n",large(&a,&b));
+    return 0;
+}

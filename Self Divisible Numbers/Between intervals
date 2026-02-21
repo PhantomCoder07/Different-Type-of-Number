@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+    int x,y;
+    printf("Enter the interval: ");
+    scanf("%d %d",&x,&y);
+    printf("Self-divisible numbers between %d to %d is:\n",x,y);
+    for (int i=x; i<=y; i++)
+    {
+        int m=i;
+        bool ans=true;
+        while (m>0)
+        {
+            int d=m%10;
+            if (d==0 || i%d!=0)
+            {
+                ans=false;
+                break;
+            }
+            m/=10;
+        }
+        if (ans)
+            printf("%d ",i);
+    }
+    return 0;
+}
